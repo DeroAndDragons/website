@@ -4,8 +4,7 @@ import template from './components/template'
 
 const page = () => {
   return h("div", null,
-    menu(),
-    h("img", { src: "/images/test.jpg" }, null)
+    menu()
   )
 }
 
