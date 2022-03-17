@@ -1,22 +1,11 @@
-import React from 'react'
-import ReactDOMServer from 'react-dom/server'
+import render from 'preact-render-to-string'
+import { h } from 'preact'
 
-const Page = (props) => {
-  const { context } = props
-  return <html>
-    <head>
-
-    </head>
-    <body>
-      <img src="/static/test.jpg" />
-      <div>{JSON.stringify(context)}</div>
-    </body>
-  </html>
-}
+const App = <div class="foo">content</div>
 
 export async function onRequest(context) {
   return new Response(
-    ReactDOMServer.renderToString(<Page context={context} />),
+    render(App),
     { headers: { 'Content-Type': 'text/html' } }
   )
-}
+} 
