@@ -1,3 +1,5 @@
 name = "dero-card-web"
 compatibility_date = "2022-03-16"
 
+[build]
+command = "npm install"
