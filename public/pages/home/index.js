@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<>
 			<section class={styles.home}>
-				<h1>HomeHome</h1>
+				<h1>Home</h1>
 				<p>This is the home page.</p>
 				<>
 					<button style={{ width: 30 }} onClick={() => setCount(count - 1)}>
