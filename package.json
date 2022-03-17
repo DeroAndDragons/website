@@ -5,9 +5,7 @@
   },
   "dependencies": {
     "preact": "^10.6.6",
-    "preact-render-to-string": "^5.1.20",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "preact-render-to-string": "^5.1.20"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.4.0",
