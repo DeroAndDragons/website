@@ -1,9 +1,10 @@
-import { LocationProvider, Router, Route, lazy, ErrorBoundary, hydrate, prerender as ssr } from 'preact-iso';
-import Home from './pages/home/index.js';
-import NotFound from './pages/_404.js';
-import Header from './header.js';
+import { LocationProvider, Router, Route, lazy, ErrorBoundary, hydrate, prerender as ssr } from 'preact-iso'
+import Home from './pages/home.js'
+import NotFound from './pages/404.js'
+import Header from './components/header.js'
+import './styles/index.module.css'
 
-const About = lazy(() => import('./pages/about/index.js'));
+const About = lazy(() => import('./pages/about.js'))
 
 export function App() {
 	return (
@@ -22,8 +23,8 @@ export function App() {
 	);
 }
 
-hydrate(<App />);
+hydrate(<App />)
 
 export async function prerender(data) {
-	return await ssr(<App {...data} />);
+	return await ssr(<App {...data} />)
 }

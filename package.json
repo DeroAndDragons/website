@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"scripts": {
-		"start": "wmr",
+		"start": "wmr --port 36532",
 		"build": "wmr build --prerender",
 		"serve": "wmr serve"
 	},
