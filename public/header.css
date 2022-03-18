@@ -1,0 +1,19 @@
+.header {
+  margin: 2em 0;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  background-color: var(--header-color);
+}
+
+.header a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 1em;
+}
+
+.header a:hover {
+  color: white;
+}

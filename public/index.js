@@ -1,23 +1,50 @@
-import { LocationProvider, Router, Route, lazy, ErrorBoundary, hydrate, prerender as ssr } from 'preact-iso'
-import Home from './pages/home.js'
-import NotFound from './pages/404.js'
-import Header from './components/header.js'
-import './styles/index.module.css'
+import { LocationProvider, Router, Route, lazy, ErrorBoundary, hydrate, prerender as ssr, useLocation } from 'preact-iso'
+import { useEffect } from 'preact/hooks'
+
+import Home from './pages/home'
+import Cli from './pages/guides/index'
+import Guides from './pages/cli'
+import NotFound from './pages/404'
+import Roadmap from './pages/roadmap'
+import Cards from './pages/cards'
+
+import Header from './components/header'
+import Footer from './components/footer'
+
 
 const About = lazy(() => import('./pages/about.js'))
+
+const ScrollToAnchor = () => {
+	const location = useLocation()
+	useEffect(() => {
+		const hash = window.location.hash
+		if (hash) {
+			const anchor = document.getElementById(hash.replace('#', ''))
+			anchor.scrollIntoView()
+		}
+	}, [location])
+
+	return null
+}
 
 export function App() {
 	return (
 		<LocationProvider>
-			<div class="app">
+			<ScrollToAnchor />
+			<div className="page">
 				<Header />
 				<ErrorBoundary>
 					<Router>
 						<Route path="/" component={Home} />
+						<Route path="/cards" component={Cards} />
+						<Route path="/roadmap" component={Roadmap} />
 						<Route path="/about" component={About} />
+						<Route path="/guides" component={Guides} />
+						<Route path="/cli" component={Cli} />
 						<Route default component={NotFound} />
 					</Router>
 				</ErrorBoundary>
+				<Footer />
 			</div>
 		</LocationProvider>
 	);

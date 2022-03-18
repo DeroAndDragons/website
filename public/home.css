@@ -1,0 +1,152 @@
+.home-row1 {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: 2em;
+}
+
+.home-row2 {
+  display: grid;
+  gap: 2em;
+  grid-auto-flow: column;
+}
+
+.card {
+  background-color: rgb(34, 34, 34);
+  border-radius: 10px;
+  padding: 2em;
+  cursor: pointer;
+  transition: all 0.25s;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.card:hover {
+  transform: scale(0.98);
+}
+
+.card-title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--text-color2);
+}
+
+.card-center {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 0.25em;
+}
+
+.card-icon {
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  width: 4em;
+  height: 4em;
+  background-color: var(--text-color2);
+}
+
+.card-cards {
+  position: relative;
+}
+
+.card-cards-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-right: 170px;
+  margin-bottom: .25em;
+}
+
+.card-cards-text {
+  font-size: 1.2em;
+  margin-right: 170px;
+}
+
+.card-cards-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: url("/img/cards/common_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 187px;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.discord-button {
+  padding: 1em 2em;
+  border-radius: 10px;
+  background-color: #002bff;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: inline-grid;
+  grid-auto-flow: column;
+  gap: 1em;
+  transition: all 0.25s;
+  align-items: center;
+  margin-top: 1em
+}
+
+.discord-button:hover {
+  transform: scale(1.05);
+}
+
+.discord-button > .icon-discord {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.about {
+  display: grid;
+  gap: 2em;
+}
+
+.about-card {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2em;
+}
+
+.about-card-reverse {
+  text-align: right;
+}
+
+.about-card-pic {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+.about-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+.about-card-description {
+  opacity: 0.7;
+}
+
+.title {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.title-sub {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  opacity: 0.7;
+  margin: 0 auto;
+  max-width: 600px;
+}

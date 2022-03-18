@@ -7,4 +7,4 @@ export default defineConfig({
 		react: 'preact/compat',
 		'react-dom': 'preact/compat'
 	}
-});
+})

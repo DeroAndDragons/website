@@ -1,0 +1,24 @@
+.icon-book {
+  mask-image: url("/img/ico/book-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/book-svgrepo-com.svg");
+}
+
+.icon-command {
+  mask-image: url("/img/ico/command-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/command-svgrepo-com.svg");
+}
+
+.icon-check-list {
+  mask-image: url("/img/ico/check-list-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/check-list-svgrepo-com.svg");
+}
+
+.icon-about-us {
+  mask-image: url("/img/ico/about-us-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/about-us-svgrepo-com.svg");
+}
+
+.icon-discord {
+  mask-image: url("/img/ico/discord-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/discord-svgrepo-com.svg");
+}
