@@ -179,3 +179,10 @@
   font-size: 1.1em;
   text-align: center;
 }
+
+.feature-card-pack {
+  border-radius: 10px;
+  margin-top: 1em;
+  width: 300px;
+  opacity: 0.2;
+}

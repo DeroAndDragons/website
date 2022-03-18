@@ -1,0 +1,6 @@
+.docs {
+  display: grid;
+  gap: 1em;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+}

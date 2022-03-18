@@ -1,15 +1,14 @@
-import { LocationProvider, Router, Route, ErrorBoundary, hydrate, prerender as ssr, useLocation } from 'preact-iso'
-import { useEffect } from 'preact/hooks'
-
+import { LocationProvider, Router, Route, ErrorBoundary, hydrate, prerender as ssr } from 'preact-iso'
 import './styles/index.css'
 import './styles/home.css'
 import './styles/cards.css'
 import './styles/icon.css'
 import './styles/table.css'
 import './styles/header.css'
+import './styles/docs.css'
 
 import Home from './pages/home'
-import Guides from './pages/guides/index'
+import Docs from './pages/docs/index'
 import Cli from './pages/cli'
 import NotFound from './pages/404'
 import Roadmap from './pages/roadmap'
@@ -17,19 +16,7 @@ import Cards from './pages/cards'
 
 import Header from './components/header'
 import Footer from './components/footer'
-
-const ScrollToAnchor = () => {
-	const location = useLocation()
-	useEffect(() => {
-		const hash = window.location.hash
-		if (hash) {
-			const anchor = document.getElementById(hash.replace('#', ''))
-			anchor.scrollIntoView()
-		}
-	}, [location])
-
-	return null
-}
+import ScrollToAnchor from './components/scrollToAnchor'
 
 export function App() {
 	return (
@@ -42,8 +29,8 @@ export function App() {
 						<Route path="/" component={Home} />
 						<Route path="/cards" component={Cards} />
 						<Route path="/roadmap" component={Roadmap} />
-						<Route path="/guides" component={Guides} />
-						<Route path="/guides/*" component={Guides} />
+						<Route path="/docs" component={Docs} />
+						<Route path="/docs/*" component={Docs} />
 						<Route path="/cli" component={Cli} />
 						<Route default component={NotFound} />
 					</Router>

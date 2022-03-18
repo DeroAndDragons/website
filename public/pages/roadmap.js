@@ -44,7 +44,7 @@ export default () => {
           <tr>
             <td></td>
             <td></td>
-            <td>Useful guides</td>
+            <td>Useful Docs/Guides</td>
             <td>Ongoing</td>
           </tr>
           <tr>

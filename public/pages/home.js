@@ -47,8 +47,8 @@ export default () => {
 						Interact with DERO Smart Contract.
 						Buy packs & mint unique cards on the DERO blockchain.
 					</Card>
-					<Card title="Guides" icon="book" link="/guides">
-						New? You should probably check out these guides.
+					<Card title="Docs" icon="book" link="/docs">
+						New? You should probably check out the docs.
 					</Card>
 					<Card title="About" icon="about-us" link="/#about">
 						Learn more about us and discover who are among the Dero community.
@@ -75,6 +75,7 @@ export default () => {
 						<div>Traditional NFT Cards</div>
 						<div>Dynamic NFT Stats Cards</div>
 					</div>
+					<img src="/img/card_pack.jpg" class="feature-card-pack" />
 				</div>
 			</section>
 			<section id="about" class="page-center">

@@ -21,7 +21,7 @@ export default function Header() {
 						<ActiveLink href="/">Home</ActiveLink>
 						<ActiveLink href="/cards">Cards</ActiveLink>
 						<ActiveLink href="/cli">CLI</ActiveLink>
-						<ActiveLink href="/guides">Guides</ActiveLink>
+						<ActiveLink href="/docs">Docs</ActiveLink>
 						<ActiveLink href="/roadmap">Roadmap</ActiveLink>
 						<ActiveLink href="/#about">About</ActiveLink>
 					</nav>
