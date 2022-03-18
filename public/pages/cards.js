@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from "preact/hooks"
 
-const cards = (type, from, to) => {
+const traditionalCards = (type, from, to) => {
   let cards = []
   for (let i = from; i <= to; i++) {
     cards.push({ type, number: i })
@@ -8,11 +8,11 @@ const cards = (type, from, to) => {
   return cards
 }
 
-const allCards = () => {
-  const commons = cards("common", 1, 15)
-  const uncommons = cards("uncommon", 1, 10)
-  const rares = cards("rare", 1, 5)
-  const secrets = cards("secret", 1, 2)
+const allTraditionalCards = () => {
+  const commons = traditionalCards("common", 1, 15)
+  const uncommons = traditionalCards("uncommon", 1, 10)
+  const rares = traditionalCards("rare", 1, 5)
+  const secrets = traditionalCards("secret", 1, 2)
   return [...commons, ...uncommons, ...rares, ...secrets]
 }
 
@@ -31,30 +31,50 @@ const CardItem = (props) => {
 }
 
 export default () => {
-  const cards = useMemo(() => allCards(), [])
-  const [displayCards, setDisplayCards] = useState(cards)
+  const traditionalCards = useMemo(() => allTraditionalCards(), [])
+  const [displayTraditionalCards, setDisplayTraditionalCards] = useState(traditionalCards)
 
   const onTypeChange = useCallback((e) => {
     const type = e.target.value
-    setDisplayCards(cards.filter(c => {
+    setDisplayTraditionalCards(traditionalCards.filter(c => {
       if (type) return c.type === type
       return true
     }))
   }, [])
 
   return <section class="page-center">
-    <h1>Traditional NFT Cards</h1>
-    <select class="filter-card" onChange={onTypeChange}>
-      <option value="">All card types</option>
-      <option value="common">Common</option>
-      <option value="uncommon">Uncommon</option>
-      <option value="rare">Rare</option>
-      <option value="secret">Secret</option>
-      <option value="unique">Unique</option>
-    </select>
-    <span>{displayCards.length} / {cards.length}</span>
+    <div class="cards-tab">
+      <div class="cards-tab-item">Traditional NFT Cards</div>
+      <div class="cards-tab-item">Dynamic NFT Stats Cards</div>
+    </div>
+    <div class="filter-cards">
+      <select onChange={onTypeChange}>
+        <option value="">All types</option>
+        <option value="common">Common</option>
+        <option value="uncommon">Uncommon</option>
+        <option value="rare">Rare</option>
+        <option value="secret">Secret</option>
+        <option value="unique">Unique</option>
+      </select>
+      <div>{displayTraditionalCards.length} / {displayTraditionalCards.length}</div>
+    </div>
+    <div class="filter-cards">
+      <select>
+        <option value="">All races</option>
+      </select>
+      <select>
+        <option value="">All genders</option>
+      </select>
+      <select>
+        <option value="">All class</option>
+      </select>
+      <select>
+        <option value="">All items</option>
+      </select>
+      <div>1000 / 1000</div>
+    </div>
     <div class="card-items">
-      {displayCards.map(card => {
+      {displayTraditionalCards.map(card => {
         return <CardItem card={card} />
       })}
     </div>

@@ -1,6 +1,40 @@
+.cards-tab {
+  display: grid;
+  grid-auto-flow: column;
+  max-width: 500px;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+}
 
-.filter-card {
+.cards-tab-item {
+  padding: 1em;
+  background-color: var(--header-color);
+  cursor: pointer;
+}
+
+.cards-tab-item:hover {
+  color: var(--text-color-highlight);
+}
+
+.cards-tab-item:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cards-tab-item:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.filter-cards {
   margin-bottom: 1em;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+  justify-content: flex-end;
+  padding: 1em;
 }
 
 .card-items {
