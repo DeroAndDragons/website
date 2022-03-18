@@ -4,7 +4,7 @@ export default function Header() {
 	const { url } = useLocation()
 	return (
 		<header className="header">
-			<div>DERO CARD</div>
+			<div>Dero & Dragons</div>
 			<nav>
 				<a href="/">Home</a>
 				<a href="/cards">Cards</a>

@@ -12,7 +12,7 @@
 }
 
 .card {
-  background-color: rgb(34, 34, 34);
+  background-color: var(--card-color);
   border-radius: 10px;
   padding: 2em;
   cursor: pointer;
@@ -29,7 +29,7 @@
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: bold;
-  color: var(--text-color2);
+  color: var(--text-color-highlight);
 }
 
 .card-center {
@@ -47,7 +47,7 @@
   -webkit-mask-size: contain;
   width: 4em;
   height: 4em;
-  background-color: var(--text-color2);
+  background-color: var(--text-color-highlight);
 }
 
 .card-cards {
@@ -109,6 +109,7 @@
 .about {
   display: grid;
   gap: 2em;
+  margin-top: 5em;
 }
 
 .about-card {

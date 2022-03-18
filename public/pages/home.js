@@ -30,7 +30,7 @@ export default () => {
 				<div class="home-row1">
 					<Card center={false} link="/cards">
 						<div class="card-cards">
-							<div class="card-cards-title">Welcome to the world of DERO CARD</div>
+							<div class="card-cards-title">Welcome to the world of<br /> Dero & Dragons</div>
 							<div class="card-cards-text">
 								We are building a fantasy world of trading card within the
 								Dero ecosystem. When you buy packs or mint new unique cards
@@ -56,7 +56,7 @@ export default () => {
 					</Card>
 				</div>
 			</section >
-			<section>
+			<section class="text-center">
 				<div class="title">Community</div>
 				<div class="title-sub">Join the Discord server and be part of building a new decentralized trading card community.</div>
 				<a href="#" class="discord-button">
@@ -64,12 +64,14 @@ export default () => {
 					Discord
 				</a>
 			</section>
-			<section>
-				<div class="title">Features</div>
+			<section class="text-center">
+				<div class="title">Cards</div>
 			</section>
-			<section>
-				<div class="title" id="about">About</div>
-				<div class="title-sub">We're just two guy who believe in decentralization.</div>
+			<section id="about">
+				<div class="text-center">
+					<div class="title">About</div>
+					<div class="title-sub">We're just two guy who believe in decentralization.</div>
+				</div>
 				<div class="about">
 					<AboutCard
 						name="g45t345rt"

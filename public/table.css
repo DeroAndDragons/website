@@ -1,0 +1,30 @@
+.table-overflow {
+  overflow-x: auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  background-color: var(--card-color);
+  border-radius: 5px;
+  padding: .5em;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid var(--header-color);
+}
+
+table th {
+  padding: .5em;
+  text-align: left;
+}
+
+table td {
+  padding: .5em;
+}
+
+table td > a {
+  display: inline-block;
+}

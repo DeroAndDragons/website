@@ -2,8 +2,8 @@ import { LocationProvider, Router, Route, lazy, ErrorBoundary, hydrate, prerende
 import { useEffect } from 'preact/hooks'
 
 import Home from './pages/home'
-import Cli from './pages/guides/index'
-import Guides from './pages/cli'
+import Guides from './pages/guides/index'
+import Cli from './pages/cli'
 import NotFound from './pages/404'
 import Roadmap from './pages/roadmap'
 import Cards from './pages/cards'
