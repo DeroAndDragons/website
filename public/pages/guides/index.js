@@ -1,3 +1,7 @@
+import { ErrorBoundary, Route, Router } from "preact-iso"
+
+import InstallCli from './install-cli'
+
 export default () => {
   return <section class="page-center">
     <div>
@@ -11,5 +15,12 @@ export default () => {
         <li><a href="/guides/create-unique-card">Create unique card</a></li>
       </ul>
     </div>
+    <ErrorBoundary>
+      <Router>
+        <Route path="/install-cli" component={InstallCli} />
+        <Route path="/cli-basics" component={null} />
+      </Router>
+    </ErrorBoundary>
   </section>
 }
+

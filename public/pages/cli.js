@@ -16,8 +16,10 @@ const downloads = [
 
 export default () => {
   return <section class="page-center">
-    <h1>Command Line Interface</h1>
-    <div>Download Dero & Dragons CLI for your platform and start minting cards.</div>
+    <h1>
+      Command Line Interface
+      <div class="h1-sub">Download Dero & Dragons CLI for your platform and start minting cards.</div>
+    </h1>
     <div class="table-overflow">
       <table>
         <thead>

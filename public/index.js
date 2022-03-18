@@ -1,5 +1,12 @@
-import { LocationProvider, Router, Route, lazy, ErrorBoundary, hydrate, prerender as ssr, useLocation } from 'preact-iso'
+import { LocationProvider, Router, Route, ErrorBoundary, hydrate, prerender as ssr, useLocation } from 'preact-iso'
 import { useEffect } from 'preact/hooks'
+
+import './styles/index.css'
+import './styles/home.css'
+import './styles/cards.css'
+import './styles/icon.css'
+import './styles/table.css'
+import './styles/header.css'
 
 import Home from './pages/home'
 import Guides from './pages/guides/index'
@@ -36,6 +43,7 @@ export function App() {
 						<Route path="/cards" component={Cards} />
 						<Route path="/roadmap" component={Roadmap} />
 						<Route path="/guides" component={Guides} />
+						<Route path="/guides/*" component={Guides} />
 						<Route path="/cli" component={Cli} />
 						<Route default component={NotFound} />
 					</Router>

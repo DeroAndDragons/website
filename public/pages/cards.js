@@ -1,3 +1,5 @@
+import { useCallback, useMemo, useState } from "preact/hooks"
+
 const cards = (type, from, to) => {
   let cards = []
   for (let i = from; i <= to; i++) {
@@ -29,9 +31,20 @@ const CardItem = (props) => {
 }
 
 export default () => {
+  const cards = useMemo(() => allCards(), [])
+  const [displayCards, setDisplayCards] = useState(cards)
+
+  const onTypeChange = useCallback((e) => {
+    const type = e.target.value
+    setDisplayCards(cards.filter(c => {
+      if (type) return c.type === type
+      return true
+    }))
+  }, [])
+
   return <section class="page-center">
     <h1>Traditional NFT Cards</h1>
-    <select>
+    <select class="filter-card" onChange={onTypeChange}>
       <option value="">All card types</option>
       <option value="common">Common</option>
       <option value="uncommon">Uncommon</option>
@@ -39,8 +52,9 @@ export default () => {
       <option value="secret">Secret</option>
       <option value="unique">Unique</option>
     </select>
+    <span>{displayCards.length} / {cards.length}</span>
     <div class="card-items">
-      {allCards().map(card => {
+      {displayCards.map(card => {
         return <CardItem card={card} />
       })}
     </div>

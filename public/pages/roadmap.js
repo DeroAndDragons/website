@@ -1,9 +1,11 @@
 export default () => {
   return <section class="page-center">
-    <h1>Project Roadmap</h1>
-    <div>
-      The project roadmap provides basic information to the current and upcoming development of the platform.
-    </div>
+    <h1>
+      Project Roadmap
+      <div class="h1-sub">
+        The project roadmap provides basic information to the current and upcoming development of the platform.
+      </div>
+    </h1>
     <div class="table-overflow">
       <table>
         <thead>

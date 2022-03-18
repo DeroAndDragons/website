@@ -25,6 +25,12 @@ a:hover {
   color: var(--text-color-highlight);
 }
 
+.h1-sub {
+  opacity: .7;
+  font-size: .7em;
+  font-weight: 400;
+}
+
 .page-center {
   margin: 0 auto;
   max-width: 900px;
@@ -43,38 +49,4 @@ a:hover {
   margin-top: 2em;
   margin-bottom: 10em;
   text-align: center;
-}
-
-.card-items {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: space-between;
-}
-
-.card-item-unknown {
-  border-radius: 10px;
-  background-color: #161616;
-  width: 180px;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-style: solid;
-  border-width: 1px;
-}
-
-.card-item-unknown::after {
-  content: "";
-  width: 5em;
-  height: 5em;
-  background-color: var(--text-color);
-  opacity: .2;
-  mask-size: cover;
-  -webkit-mask-size: cover;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-image: url("/img/ico/question-mark-circled-svgrepo-com.svg");
-  -webkit-mask-image: url("/img/ico/question-mark-circled-svgrepo-com.svg");
 }
