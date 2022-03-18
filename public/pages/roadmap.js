@@ -1,5 +1,5 @@
 export default () => {
-  return <div>
+  return <section class="page-center">
     <h1>Project Roadmap</h1>
     <div class="table-overflow">
       <table>
@@ -63,5 +63,5 @@ export default () => {
         </tbody>
       </table>
     </div>
-  </div>
+  </section>
 }

@@ -11,9 +11,6 @@ import Cards from './pages/cards'
 import Header from './components/header'
 import Footer from './components/footer'
 
-
-const About = lazy(() => import('./pages/about.js'))
-
 const ScrollToAnchor = () => {
 	const location = useLocation()
 	useEffect(() => {
@@ -31,14 +28,13 @@ export function App() {
 	return (
 		<LocationProvider>
 			<ScrollToAnchor />
-			<div className="page">
+			<div>
 				<Header />
 				<ErrorBoundary>
 					<Router>
 						<Route path="/" component={Home} />
 						<Route path="/cards" component={Cards} />
 						<Route path="/roadmap" component={Roadmap} />
-						<Route path="/about" component={About} />
 						<Route path="/guides" component={Guides} />
 						<Route path="/cli" component={Cli} />
 						<Route default component={NotFound} />

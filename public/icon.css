@@ -22,3 +22,8 @@
   mask-image: url("/img/ico/discord-svgrepo-com.svg");
   -webkit-mask-image: url("/img/ico/discord-svgrepo-com.svg");
 }
+
+.icon-question-circle {
+  mask-image: url("/img/ico/question-mark-circled-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/question-mark-circled-svgrepo-com.svg");
+}

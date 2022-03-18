@@ -11,7 +11,7 @@
   grid-auto-flow: column;
 }
 
-.card {
+.container {
   background-color: var(--card-color);
   border-radius: 10px;
   padding: 2em;
@@ -21,18 +21,18 @@
   color: var(--text-color);
 }
 
-.card:hover {
+.container:hover {
   transform: scale(0.98);
 }
 
-.card-title {
+.container-title {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: bold;
   color: var(--text-color-highlight);
 }
 
-.card-center {
+.container-center {
   display: grid;
   align-content: center;
   justify-items: center;
@@ -40,7 +40,7 @@
   gap: 0.25em;
 }
 
-.card-icon {
+.container-icon {
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-size: contain;
@@ -50,23 +50,23 @@
   background-color: var(--text-color-highlight);
 }
 
-.card-cards {
+.container-intro {
   position: relative;
 }
 
-.card-cards-title {
+.container-intro-title {
   font-weight: bold;
   font-size: 1.4em;
   margin-right: 170px;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
-.card-cards-text {
+.container-intro-text {
   font-size: 1.2em;
   margin-right: 170px;
 }
 
-.card-cards-img {
+.container-intro-img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-image: url("/img/cards/common_1.jpg");
@@ -91,7 +91,7 @@
   gap: 1em;
   transition: all 0.25s;
   align-items: center;
-  margin-top: 1em
+  margin: 1em 0 5em 0;
 }
 
 .discord-button:hover {
@@ -109,7 +109,7 @@
 .about {
   display: grid;
   gap: 2em;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .about-card {
@@ -148,6 +148,33 @@
   margin-top: 0.5em;
   font-size: 1.5em;
   opacity: 0.7;
-  margin: 0 auto;
   max-width: 600px;
+}
+
+.feature-title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.feature-title-sub {
+  font-size: 1.5em;
+  opacity: 0.7;
+  margin-bottom: 1em;
+}
+
+.feature-section {
+  background-color: var(--card-color);
+  padding: 3em 0;
+}
+
+.feature-tab {
+  background-color: var(--background);
+  padding: 1em;
+  border-radius: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  max-width: 500px;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
 }

@@ -2,10 +2,10 @@ import classnames from 'classnames'
 
 const Card = (props) => {
 	const { link, title, icon, children, center = true } = props
-	const cardClass = classnames(`card`, { 'card-center': center })
+	const cardClass = classnames(`container`, { 'container-center': center })
 	return <a href={link} class={cardClass}>
-		{icon && <div class={`card-icon icon-${icon}`} />}
-		{title && <div class="card-title">{title}</div>}
+		{icon && <div class={`container-icon icon-${icon}`} />}
+		{title && <div class="container-title">{title}</div>}
 		{children}
 	</a>
 }
@@ -26,17 +26,16 @@ const AboutCard = (props) => {
 export default () => {
 	return (
 		<>
-			<section>
+			<section class='page-center'>
 				<div class="home-row1">
 					<Card center={false} link="/cards">
-						<div class="card-cards">
-							<div class="card-cards-title">Welcome to the world of<br /> Dero & Dragons</div>
-							<div class="card-cards-text">
+						<div class="container-intro">
+							<div class="container-intro-title">Welcome to the world of<br /> Dero & Dragons</div>
+							<div class="container-intro-text">
 								We are building a fantasy world of trading card within the
-								Dero ecosystem. When you buy packs or mint new unique cards
-								you are the only with it.
+								Dero ecosystem. You can buy packs and create unique NFT cards.
 							</div>
-							<div class="card-cards-img" />
+							<div class="container-intro-img" />
 						</div>
 					</Card>
 					<Card title="Roadmap" icon="check-list" link="/roadmap">
@@ -56,21 +55,35 @@ export default () => {
 					</Card>
 				</div>
 			</section >
-			<section class="text-center">
-				<div class="title">Community</div>
-				<div class="title-sub">Join the Discord server and be part of building a new decentralized trading card community.</div>
-				<a href="#" class="discord-button">
-					<div class="icon-discord" />
-					Discord
-				</a>
+			<section class="page-center">
+				<div class="center">
+					<div class="title">Community</div>
+					<div class="title-sub center">Join the Discord server and be part of building a new decentralized trading card community.</div>
+					<a href="#" class="discord-button">
+						<div class="icon-discord" />
+						Discord
+					</a>
+				</div>
 			</section>
-			<section class="text-center">
-				<div class="title">Cards</div>
+			<section class="feature-section">
+				<div class="page-center">
+					<div class="feature-title">Features</div>
+					<div class="feature-title-sub">
+						One of the first DApp of the DERO blockchain.
+					</div>
+					<div class="feature-tab">
+						<div>Traditional NFT Cards</div>
+						<div>Dynamic NFT Stats Cards</div>
+					</div>
+				</div>
 			</section>
-			<section id="about">
-				<div class="text-center">
+			<section id="about" class="page-center">
+				<div>
 					<div class="title">About</div>
-					<div class="title-sub">We're just two guy who believe in decentralization.</div>
+					<div class="title-sub">
+						We're just two guys who believe in decentralization and happened to
+						have skills that can be merge to create dApps for everyone.
+					</div>
 				</div>
 				<div class="about">
 					<AboutCard

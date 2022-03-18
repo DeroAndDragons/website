@@ -17,12 +17,12 @@ table, th, td {
 }
 
 table th {
-  padding: .5em;
+  padding: .75em;
   text-align: left;
 }
 
 table td {
-  padding: .5em;
+  padding: .75em;
 }
 
 table td > a {

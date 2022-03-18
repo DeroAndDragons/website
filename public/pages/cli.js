@@ -15,7 +15,7 @@ const downloads = [
 ]
 
 export default () => {
-  return <div>
+  return <section class="page-center">
     <h1>Command Line Interface</h1>
     <div>Download Dero & Dragons CLI for your platform and start minting cards.</div>
     <div class="table-overflow">
@@ -45,5 +45,5 @@ export default () => {
         </tbody>
       </table>
     </div>
-  </div>
+  </section>
 }
