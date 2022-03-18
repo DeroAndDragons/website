@@ -1,7 +1,16 @@
+import classnames from 'classnames'
 import { useLocation } from 'preact-iso'
 
-export default function Header() {
+const ActiveLink = (props) => {
+	const { href, children } = props
 	const { url } = useLocation()
+
+	const isActive = href === url
+	const linkClass = classnames({ 'header-active-link': isActive })
+	return <a href={href} class={linkClass}>{children}</a>
+}
+
+export default function Header() {
 	return (
 		<div class="page-center">
 			<header className="header">
@@ -9,12 +18,12 @@ export default function Header() {
 				<div>
 					<div class="header-title">Dero & Dragons</div>
 					<nav>
-						<a href="/">Home</a>
-						<a href="/cards">Cards</a>
-						<a href="/cli">CLI</a>
-						<a href="/guides">Guides</a>
-						<a href="/roadmap">Roadmap</a>
-						<a href="/#about">About</a>
+						<ActiveLink href="/">Home</ActiveLink>
+						<ActiveLink href="/cards">Cards</ActiveLink>
+						<ActiveLink href="/cli">CLI</ActiveLink>
+						<ActiveLink href="/guides">Guides</ActiveLink>
+						<ActiveLink href="/roadmap">Roadmap</ActiveLink>
+						<ActiveLink href="/#about">About</ActiveLink>
 					</nav>
 				</div>
 			</header>
