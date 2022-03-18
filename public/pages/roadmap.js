@@ -1,6 +1,9 @@
 export default () => {
   return <section class="page-center">
     <h1>Project Roadmap</h1>
+    <div>
+      The project roadmap provides basic information to the current and upcoming development of the platform.
+    </div>
     <div class="table-overflow">
       <table>
         <thead>
@@ -53,6 +56,18 @@ export default () => {
             <td></td>
             <td>Assets for Dynamic NFT cards</td>
             <td>Ongoing</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Website Translation (fr, es)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Q2</td>
+            <td>Web application (Mobile responsive)</td>
+            <td></td>
           </tr>
           <tr>
             <td>2024</td>

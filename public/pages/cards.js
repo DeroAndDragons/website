@@ -32,11 +32,12 @@ export default () => {
   return <section class="page-center">
     <h1>Traditional NFT Cards</h1>
     <select>
-      <option>Common</option>
-      <option>Uncommon</option>
-      <option>Rare</option>
-      <option>Secret</option>
-      <option>Unique</option>
+      <option value="">All card types</option>
+      <option value="common">Common</option>
+      <option value="uncommon">Uncommon</option>
+      <option value="rare">Rare</option>
+      <option value="secret">Secret</option>
+      <option value="unique">Unique</option>
     </select>
     <div class="card-items">
       {allCards().map(card => {

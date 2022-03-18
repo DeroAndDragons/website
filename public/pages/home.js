@@ -59,7 +59,7 @@ export default () => {
 				<div class="center">
 					<div class="title">Community</div>
 					<div class="title-sub center">Join the Discord server and be part of building a new decentralized trading card community.</div>
-					<a href="#" class="discord-button">
+					<a href="https://discord.gg/m5EzHcCjdU" class="discord-button">
 						<div class="icon-discord" />
 						Discord
 					</a>

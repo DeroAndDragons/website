@@ -3,6 +3,11 @@
   border-radius: 10px;
   padding: 1em 1.5em;
   background-color: var(--header-color);
+  display: grid;
+  gap: 1em;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .header a {
@@ -16,4 +21,14 @@
 
 .header a:hover {
   color: white;
+}
+
+.header-logo {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+
+.header-title {
+  font-style: italic;
 }
