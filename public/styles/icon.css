@@ -27,3 +27,8 @@
   mask-image: url("/img/ico/question-mark-circled-svgrepo-com.svg");
   -webkit-mask-image: url("/img/ico/question-mark-circled-svgrepo-com.svg");
 }
+
+.icon-menu {
+  mask-image: url("/img/ico/menu-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/menu-svgrepo-com.svg");
+}
