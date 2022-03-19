@@ -1,4 +1,5 @@
 import classnames from 'classnames'
+import { useState } from 'preact/hooks'
 
 const Card = (props) => {
 	const { link, title, icon, children, center = true } = props
@@ -25,6 +26,8 @@ const AboutCard = (props) => {
 }
 
 export default () => {
+	const [featureCardType, setFeatureCardType] = useState('traditional')
+
 	return (
 		<>
 			<section class='page-center'>
@@ -73,10 +76,19 @@ export default () => {
 						One of the first DApp of the DERO blockchain.
 					</div>
 					<div class="feature-tab">
-						<div>Traditional NFT Cards</div>
-						<div>Dynamic NFT Stats Cards</div>
+						<div class={featureCardType === 'traditional' ? `active` : ``} onClick={() => setFeatureCardType('traditional')}>Traditional NFT Cards</div>
+						<div class={featureCardType === 'dynamic' ? `active` : ``} onClick={() => setFeatureCardType('dynamic')}>Dynamic NFT Stats Cards</div>
 					</div>
-					<img src="/img/card_pack.jpg" class="feature-card-pack" />
+					{featureCardType === 'traditional' && <div class='feature-cards'>
+						<img src="/img/temp/tcard_1.jpg" />
+						<img src="/img/temp/tcard_2.jpg" />
+						<img src="/img/temp/tcard_3.jpg" />
+					</div>}
+					{featureCardType === 'dynamic' && <div class='feature-cards'>
+						<img src="/img/temp/dcard_1.jpg" />
+						<img src="/img/temp/dcard_2.jpg" />
+						<img src="/img/temp/dcard_3.jpg" />
+					</div>}
 				</div>
 			</section>
 			<section id="about" class="page-center">

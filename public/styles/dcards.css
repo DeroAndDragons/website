@@ -1,0 +1,50 @@
+.dcards {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em
+}
+
+.dcards-placeholder {
+  border-radius: 10px;
+  background-color: #161616;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dcards-placeholder::after {
+  content: "";
+  width: 5em;
+  height: 5em;
+  background-color: var(--text-color);
+  opacity: .2;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url("/img/ico/question-mark-circled-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/question-mark-circled-svgrepo-com.svg");
+}
+
+.dcards-specs {
+  display: grid;
+  gap: 1em;
+}
+
+.dcards-specs > div {
+  display: grid;
+}
+
+.dcards-specs label {
+  font-size: 1em;
+  font-weight: bold;
+  opacity: .5;
+  text-transform: uppercase;
+  margin-bottom: .25em;
+}
+
+.dcards-specs select {
+  max-width: 200px;
+}

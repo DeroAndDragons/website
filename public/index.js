@@ -2,7 +2,8 @@ import { LocationProvider, Router, Route, ErrorBoundary, hydrate, prerender as s
 
 import './styles/index.css'
 import './styles/home.css'
-import './styles/cards.css'
+import './styles/tcards.css'
+import './styles/dcards.css'
 import './styles/icon.css'
 import './styles/table.css'
 import './styles/header.css'
@@ -14,7 +15,8 @@ import Docs from './pages/docs/index'
 import Cli from './pages/cli'
 import NotFound from './pages/404'
 import Roadmap from './pages/roadmap'
-import Cards from './pages/cards'
+import TCards from './pages/tcards'
+import DCards from './pages/dcards'
 
 import Header from './components/header'
 import Footer from './components/footer'
@@ -29,7 +31,8 @@ export function App() {
 				<ErrorBoundary>
 					<Router>
 						<Route path="/" component={Home} />
-						<Route path="/cards" component={Cards} />
+						<Route path="/traditional-cards" component={TCards} />
+						<Route path="/dynamic-cards" component={DCards} />
 						<Route path="/roadmap" component={Roadmap} />
 						<Route path="/docs" component={Docs} />
 						<Route path="/docs/*" component={Docs} />

@@ -33,7 +33,8 @@ export default function Header() {
 						<div className="header-mobile-blur" />
 						<nav class="header-mobile-nav">
 							<ActiveLink href="/">Home</ActiveLink>
-							<ActiveLink href="/cards">Cards</ActiveLink>
+							<ActiveLink href="/traditional-cards">T-Cards</ActiveLink>
+							<ActiveLink href="/dynamic-cards">D-Card</ActiveLink>
 							<ActiveLink href="/cli">CLI</ActiveLink>
 							<ActiveLink href="/docs">Docs</ActiveLink>
 							<ActiveLink href="/roadmap">Roadmap</ActiveLink>
@@ -46,7 +47,8 @@ export default function Header() {
 						<div class="header-title">Dero & Dragons</div>
 						<nav>
 							<ActiveLink href="/">Home</ActiveLink>
-							<ActiveLink href="/cards">Cards</ActiveLink>
+							<ActiveLink href="/traditional-cards">T-Cards</ActiveLink>
+							<ActiveLink href="/dynamic-cards">D-Cards</ActiveLink>
 							<ActiveLink href="/cli">CLI</ActiveLink>
 							<ActiveLink href="/docs">Docs</ActiveLink>
 							<ActiveLink href="/roadmap">Roadmap</ActiveLink>

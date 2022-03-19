@@ -157,7 +157,6 @@
   color: #a39c8a;
 }
 
-
 .title {
   margin-top: 2em;
   font-size: 2em;
@@ -187,10 +186,30 @@
   padding: 3em 0;
 }
 
-.feature-tab {
-  background-color: var(--background);
-  padding: 1em;
+.feature-cards {
+  display: grid;
+  margin-top: 1em;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  gap: 1em;
+  overflow: auto;
+}
+
+.feature-cards > img {
   border-radius: 10px;
+  width: 140px;
+  height: 200px;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  .feature-cards > img {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+.feature-tab {
   display: grid;
   grid-auto-flow: column;
   max-width: 500px;
@@ -199,9 +218,39 @@
   text-align: center;
 }
 
-.feature-card-pack {
-  border-radius: 10px;
-  margin-top: 1em;
-  width: 300px;
-  opacity: 0.2;
+.feature-tab > div {
+  padding: 1em;
+  background-color: var(--background);
+  cursor: pointer;
+  position: relative;
+}
+
+.feature-tab > div:hover {
+  color: var(--text-color-highlight);
+}
+
+.feature-tab > div:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.feature-tab > div:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.feature-tab > div.active {
+  color: var(--text-color-highlight);
+}
+
+.feature-tab > div.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -13px;
+  border-width: 13px;
+  border-style: solid;
+  border-color: transparent transparent var(--card-color) transparent;
+  z-index: 1;
 }

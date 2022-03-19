@@ -1,5 +1,5 @@
 .header {
-  margin: 2em 0;
+  margin: 1em 0;
   border-radius: 10px;
   padding: 1em 1.5em;
   background-color: var(--header-color);
@@ -51,6 +51,10 @@
 }
 
 @media screen and (min-width: 600px) {
+  .header {
+    margin: 2em 0;
+  }
+
   .header-mobile {
     display: none !important;
   }
