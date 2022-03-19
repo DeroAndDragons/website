@@ -1,4 +1,5 @@
 import { LocationProvider, Router, Route, ErrorBoundary, hydrate, prerender as ssr } from 'preact-iso'
+
 import './styles/index.css'
 import './styles/home.css'
 import './styles/cards.css'
@@ -6,6 +7,7 @@ import './styles/icon.css'
 import './styles/table.css'
 import './styles/header.css'
 import './styles/docs.css'
+import './styles/footer.css'
 
 import Home from './pages/home'
 import Docs from './pages/docs/index'

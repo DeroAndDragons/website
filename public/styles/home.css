@@ -150,6 +150,14 @@
   font-size: 1.05em;
 }
 
+.about-card-job {
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #a39c8a;
+}
+
+
 .title {
   margin-top: 2em;
   font-size: 2em;

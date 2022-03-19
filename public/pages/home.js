@@ -11,12 +11,13 @@ const Card = (props) => {
 }
 
 const AboutCard = (props) => {
-	const { name, pic, description, reverse } = props
+	const { name, pic, job, description, reverse } = props
 	const aboutClass = classnames(`about-card`, { 'about-card-reverse': reverse })
 	return <div class={aboutClass}>
 		{!reverse && <img src={pic} class="about-card-pic" />}
 		<div>
 			<div class="about-card-title">{name}</div>
+			<div class="about-card-job">{job}</div>
 			<div class="about-card-description">{description}</div>
 		</div>
 		{reverse && <img src={pic} class="about-card-pic" />}
@@ -59,7 +60,7 @@ export default () => {
 				<div class="center">
 					<div class="title">Community</div>
 					<div class="title-sub center">Join the Discord server and be part of building a new decentralized trading card community.</div>
-					<a href="https://discord.gg/m5EzHcCjdU" class="discord-button">
+					<a href="https://discord.gg/m5EzHcCjdU" target="_blank" class="discord-button">
 						<div class="icon-discord" />
 						Discord
 					</a>
@@ -89,6 +90,7 @@ export default () => {
 				<div class="about">
 					<AboutCard
 						name="g45t345rt"
+						job="The Coder"
 						description={`
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -100,6 +102,7 @@ export default () => {
 					<AboutCard
 						reverse
 						name="JoyRaptor"
+						job="The Artist"
 						description={`
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

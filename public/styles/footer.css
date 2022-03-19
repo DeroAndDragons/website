@@ -1,0 +1,29 @@
+
+.footer {
+  margin-top: 2em;
+  margin-bottom: 10em;
+  text-align: center;
+}
+
+.footer-social {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.footer-social > a {
+  width: 1.5em;
+  height: 1.5em;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  background-color: var(--text-color);
+}
+
+.footer-social > a:hover {
+  background-color: var(--text-color-highlight);
+}
