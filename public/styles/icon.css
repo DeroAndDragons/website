@@ -42,3 +42,23 @@
   mask-image: url("/img/ico/twitter-svgrepo-com.svg");
   -webkit-mask-image: url("/img/ico/twitter-svgrepo-com.svg");
 }
+//
+.icon-windows {
+  mask-image: url("/img/ico/windows-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/windows-svgrepo-com.svg");
+}
+
+.icon-linux {
+  mask-image: url("/img/ico/linux-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/linux-svgrepo-com.svg");
+}
+
+.icon-apple {
+  mask-image: url("/img/ico/apple-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/apple-svgrepo-com.svg");
+}
+
+.icon-freebsd {
+  mask-image: url("/img/ico/freebsd-svgrepo-com.svg");
+  -webkit-mask-image: url("/img/ico/freebsd-svgrepo-com.svg");
+}

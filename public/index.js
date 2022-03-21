@@ -1,5 +1,6 @@
 import { LocationProvider, Router, Route, ErrorBoundary, hydrate, prerender as ssr } from 'preact-iso'
 
+import './styles/normalize.css'
 import './styles/index.css'
 import './styles/home.css'
 import './styles/tcards.css'
@@ -9,6 +10,7 @@ import './styles/table.css'
 import './styles/header.css'
 import './styles/docs.css'
 import './styles/footer.css'
+import './styles/cli.css'
 
 import Home from './pages/home'
 import Docs from './pages/docs/index'

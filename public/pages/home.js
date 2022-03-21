@@ -32,30 +32,35 @@ export default () => {
 		<>
 			<section class='page-center'>
 				<div class="home-row1">
-					<Card center={false} link="/cards">
+					<Card center={false} link="/traditional-cards">
 						<div class="container-intro">
-							<div class="container-intro-title">Welcome to the world of<br /> Dero & Dragons</div>
-							<div class="container-intro-text">
-								We are building a fantasy world of trading card within the
-								Dero ecosystem. You can buy packs and create unique NFT cards.
+							<div>
+								<div class="container-intro-title">Welcome to the world of</div>
+								<div class="container-intro-name">Dero & Dragons</div>
+								<div class="container-intro-text">
+									We are building a fantasy world of trading card within the
+									Dero ecosystem. You can buy packs and create unique NFT cards.
+								</div>
 							</div>
 							<div class="container-intro-img" />
 						</div>
 					</Card>
 					<Card title="Roadmap" icon="check-list" link="/roadmap">
-						Project overview and where we are going from here.
+						<div class="container-text">Project overview and where we are going from here.</div>
 					</Card>
 				</div>
 				<div class="home-row2">
 					<Card title="CLI" icon="command" link="/cli">
-						Interact with DERO Smart Contract.
-						Buy packs & mint unique cards on the DERO blockchain.
+						<div class="container-text">
+							Interact with DERO Smart Contract.
+							Buy packs & mint unique cards on the DERO blockchain.
+						</div>
 					</Card>
 					<Card title="Docs" icon="book" link="/docs">
-						New? You should probably check out the docs.
+						<div class="container-text">New? You should probably check out the docs.</div>
 					</Card>
 					<Card title="About" icon="about-us" link="/#about">
-						Learn more about us and discover who are among the Dero community.
+						<div class="container-text">Learn more about us and discover who are among the Dero community.</div>
 					</Card>
 				</div>
 			</section >

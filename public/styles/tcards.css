@@ -18,8 +18,8 @@
 .tcards-item-unknown {
   border-radius: 10px;
   background-color: #161616;
-  width: 180px;
-  height: 250px;
+  width: 12em;
+  height: 18em;
   display: flex;
   align-items: center;
   justify-content: center;

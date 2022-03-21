@@ -1,7 +1,14 @@
 .dcards {
   display: grid;
-  grid-auto-flow: column;
-  gap: 1em
+  gap: 1em;
+  justify-content: center;
+}
+
+@media screen and (min-width: 400px) {
+  .dcards {
+    justify-content: flex-start;
+    grid-auto-flow: column;
+  }  
 }
 
 .dcards-placeholder {
