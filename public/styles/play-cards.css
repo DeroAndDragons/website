@@ -1,4 +1,4 @@
-.tcards-filter {
+.pcards-filter {
   margin-bottom: 1em;
   display: grid;
   grid-auto-flow: column;
@@ -7,7 +7,7 @@
   padding: 1em;
 }
 
-.tcards-items {
+.pcards-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -15,7 +15,7 @@
   justify-content: space-evenly;
 }
 
-.tcards-item-unknown {
+.pcards-item-unknown {
   border-radius: 10px;
   background-color: #161616;
   width: 12em;
@@ -27,7 +27,7 @@
   border-width: 1px;
 }
 
-.tcards-item-unknown::after {
+.pcards-item-unknown::after {
   content: "";
   width: 5em;
   height: 5em;

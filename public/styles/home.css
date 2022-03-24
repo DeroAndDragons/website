@@ -213,6 +213,10 @@
   overflow: auto;
 }
 
+.feature-cards-description {
+  margin-top: .5em;
+}
+
 .feature-cards > img {
   border-radius: 10px;
   width: 140px;

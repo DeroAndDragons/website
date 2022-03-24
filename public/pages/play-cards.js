@@ -26,7 +26,7 @@ const cardBorderColor = (type) => {
 const CardItem = (props) => {
   const { card } = props
   const { type, number } = card
-  return <div class="tcards-item-unknown" style={{ borderColor: cardBorderColor(type) }}>
+  return <div class="pcards-item-unknown" style={{ borderColor: cardBorderColor(type) }}>
   </div>
 }
 
@@ -44,10 +44,10 @@ export default () => {
 
   return <section class="page-center">
     <h1>
-      Traditional cards
-      <div class="h1-sub">Static trading card with rarety and grades.</div>
+      Play cards
+      <div class="h1-sub">Collect all play cards on the blockchain.</div>
     </h1>
-    <div class="tcards-filter">
+    <div class="pcards-filter">
       <select onChange={onTypeChange}>
         <option value="">All types</option>
         <option value="common">Common</option>
@@ -58,7 +58,7 @@ export default () => {
       </select>
       <div>{displayCards.length} / {displayCards.length}</div>
     </div>
-    <div class="tcards-items">
+    <div class="pcards-items">
       {displayCards.map(card => {
         return <CardItem card={card} />
       })}

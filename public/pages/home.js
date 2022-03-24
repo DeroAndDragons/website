@@ -26,7 +26,7 @@ const AboutCard = (props) => {
 }
 
 export default () => {
-	const [featureCardType, setFeatureCardType] = useState('traditional')
+	const [featureCardType, setFeatureCardType] = useState('play')
 
 	return (
 		<>
@@ -80,19 +80,31 @@ export default () => {
 					<div class="feature-title-sub">
 						One of the first DApp of the DERO blockchain.
 					</div>
+					<ul>
+						<li>Buy packs of play cards</li>
+						<li>Create your own unique play card or NFT hero card</li>
+						<li>On chain market transactions to sell cards</li>
+						<li>Transfer card to others</li>
+					</ul>
 					<div class="feature-tab">
-						<div class={featureCardType === 'traditional' ? `active` : ``} onClick={() => setFeatureCardType('traditional')}>Traditional NFT Cards</div>
-						<div class={featureCardType === 'dynamic' ? `active` : ``} onClick={() => setFeatureCardType('dynamic')}>Dynamic NFT Stats Cards</div>
+						<div class={featureCardType === 'play' ? `active` : ``} onClick={() => setFeatureCardType('play')}>Play Cards</div>
+						<div class={featureCardType === 'hero' ? `active` : ``} onClick={() => setFeatureCardType('hero')}>Hero Cards</div>
 					</div>
-					{featureCardType === 'traditional' && <div class='feature-cards'>
-						<img src="/img/temp/tcard_1.jpg" />
-						<img src="/img/temp/tcard_2.jpg" />
-						<img src="/img/temp/tcard_3.jpg" />
+					{featureCardType === 'play' && <div>
+						<div class="feature-cards-description">Collect all playable trading cards.</div>
+						<div class="feature-cards">
+							<img src="/img/temp/tcard_1.jpg" />
+							<img src="/img/temp/tcard_2.jpg" />
+							<img src="/img/temp/tcard_3.jpg" />
+						</div>
 					</div>}
-					{featureCardType === 'dynamic' && <div class='feature-cards'>
-						<img src="/img/temp/dcard_1.jpg" />
-						<img src="/img/temp/dcard_2.jpg" />
-						<img src="/img/temp/dcard_3.jpg" />
+					{featureCardType === 'hero' && <div>
+						<div class="feature-cards-description">Unique NFT hero trading cards.</div>
+						<div class="feature-cards">
+							<img src="/img/temp/dcard_1.jpg" />
+							<img src="/img/temp/dcard_2.jpg" />
+							<img src="/img/temp/dcard_3.jpg" />
+						</div>
 					</div>}
 				</div>
 			</section>

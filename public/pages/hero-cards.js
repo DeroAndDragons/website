@@ -1,14 +1,14 @@
 export default () => {
   return <div class="page-center">
     <h1>
-      Dynamic cards
-      <div class="h1-sub">Auto-generated dynamic trading cards - More than 1000 possibilities.</div>
+      Hero cards
+      <div class="h1-sub">Create your own hero card NFT.</div>
     </h1>
-    <div class="dcards">
-      <div class="dcards-placeholder">
+    <div class="hcards">
+      <div class="hcards-placeholder">
 
       </div>
-      <div class="dcards-specs">
+      <div class="hcards-specs">
         <div>
           <label>Background</label>
           <select>

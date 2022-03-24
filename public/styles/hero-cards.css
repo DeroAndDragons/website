@@ -1,17 +1,17 @@
-.dcards {
+.hcards {
   display: grid;
   gap: 1em;
   justify-content: center;
 }
 
 @media screen and (min-width: 400px) {
-  .dcards {
+  .hcards {
     justify-content: flex-start;
     grid-auto-flow: column;
   }  
 }
 
-.dcards-placeholder {
+.hcards-placeholder {
   border-radius: 10px;
   background-color: #161616;
   width: 250px;
@@ -21,7 +21,7 @@
   justify-content: center;
 }
 
-.dcards-placeholder::after {
+.hcards-placeholder::after {
   content: "";
   width: 5em;
   height: 5em;
@@ -35,16 +35,16 @@
   -webkit-mask-image: url("/img/ico/question-mark-circled-svgrepo-com.svg");
 }
 
-.dcards-specs {
+.hcards-specs {
   display: grid;
   gap: 1em;
 }
 
-.dcards-specs > div {
+.hcards-specs > div {
   display: grid;
 }
 
-.dcards-specs label {
+.hcards-specs label {
   font-size: 1em;
   font-weight: bold;
   opacity: .5;
@@ -52,6 +52,6 @@
   margin-bottom: .25em;
 }
 
-.dcards-specs select {
+.hcards-specs select {
   max-width: 200px;
 }
